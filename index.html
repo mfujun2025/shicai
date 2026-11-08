@@ -3,1144 +3,386 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>石材.中国｜行业合作招商</title>
-<meta name="description" content="石材.中国 合作招商页面：面向石材行业供应商、采购商、经销商与服务商，介绍平台定位、合作类型、合作权益与合作流程，并提供在线合作申请入口。">
-<meta name="theme-color" content="#1b211f">
+<title>石材.中国｜招募 1 名技术合作伙伴</title>
+<meta name="description" content="石材.中国 技术合作伙伴招募：我方提供中文域名「石材.中国」，合作方提供技术能力，双方共同推进项目。本次仅招募 1 名技术合作伙伴，欢迎通过邮件联系。">
+<meta name="theme-color" content="#fbfaf7">
 <style>
   :root{
-    --ink:#1b211f;
-    --ink-2:#29322d;
-    --stone:#f7f5f0;
-    --stone-2:#eeeae1;
-    --line:#ded8cc;
-    --text:#333b37;
+    --bg:#fbfaf7;
+    --surface:#fff;
+    --ink:#1e2622;
+    --ink-soft:#3c4740;
     --muted:#6e7770;
-    --gold:#a9844e;
-    --gold-soft:#cdb083;
-    --green:#4c6055;
-    --white:#fff;
-    --radius:14px;
-    --shadow:0 12px 34px rgba(27,33,31,.075);
+    --line:#e3ded3;
+    --line-strong:#cfc8ba;
+    --accent:#2f4a3d;
+    --gold:#a98a58;
+    --deep:#20302a;
     --serif:"Noto Serif SC","Source Han Serif SC","Songti SC","STSong","SimSun",serif;
     --sans:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Segoe UI",Roboto,sans-serif;
-    --maxw:1180px;
+    --maxw:1120px;
   }
 
   *,*::before,*::after{box-sizing:border-box}
   html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{margin:0;background:var(--stone);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
-  img,svg{display:block;max-width:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
-  button,input,select,textarea{font:inherit;color:inherit}
-  button{cursor:pointer}
+  button{font:inherit;color:inherit;cursor:pointer}
+  svg{display:block;max-width:100%}
   :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
-  ::selection{background:var(--gold-soft);color:var(--ink)}
+  ::selection{background:#e6ddc8;color:var(--ink)}
+  .wrap{width:min(100% - 48px,var(--maxw));margin-inline:auto}
+  .skip{position:absolute;left:-9999px;top:0;background:var(--accent);color:#fff;padding:10px 16px;z-index:200}
+  .skip:focus{left:12px;top:12px}
 
-  .wrap{width:min(100% - 44px,var(--maxw));margin-inline:auto}
-  .skip-link{position:absolute;left:-9999px;top:0;background:var(--gold);color:#fff;padding:10px 16px;z-index:200}
-  .skip-link:focus{left:12px;top:12px}
+  /* ---------- header ---------- */
+  .site-header{border-bottom:1px solid var(--line);background:rgba(251,250,247,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);position:sticky;top:0;z-index:100}
+  .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .brand{display:flex;align-items:center;gap:11px}
+  .brand-mark{width:32px;height:32px;border-radius:7px;background:var(--deep);position:relative;overflow:hidden;flex-shrink:0}
+  .brand-mark::before,.brand-mark::after{content:"";position:absolute;left:-20%;width:140%;height:1px;background:var(--gold);opacity:.8;transform:rotate(-32deg)}
+  .brand-mark::before{top:11px}
+  .brand-mark::after{top:21px;transform:rotate(-22deg);opacity:.45}
+  .brand-text b{display:block;font-family:var(--serif);font-size:17px;line-height:1.2;letter-spacing:.02em}
+  .brand-text span{display:block;font-size:10px;letter-spacing:.22em;color:var(--muted);line-height:1.5}
+  .head-link{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line-strong);border-radius:7px;padding:9px 16px;font-size:13px;font-weight:600;color:var(--ink);transition:border-color .2s,background .2s}
+  .head-link:hover{border-color:var(--accent);background:#fff}
+  .head-link svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.7}
 
-  /* ---------- Header ---------- */
-  .site-header{position:sticky;top:0;z-index:100;background:rgba(247,245,240,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(222,216,204,.8)}
-  .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-  .brand{display:flex;align-items:center;gap:12px;flex-shrink:0}
-  .brand-mark{width:38px;height:38px;border-radius:9px;background:var(--ink);display:grid;place-items:center;position:relative;overflow:hidden}
-  .brand-mark::before,.brand-mark::after{content:"";position:absolute;width:150%;height:1px;background:var(--gold-soft);opacity:.75;transform:rotate(-32deg)}
-  .brand-mark::before{top:12px}
-  .brand-mark::after{top:24px;transform:rotate(-24deg);opacity:.45}
-  .brand-name{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:.03em;color:var(--ink);line-height:1.2}
-  .brand-sub{font-size:10px;letter-spacing:.26em;color:var(--muted);line-height:1.4}
-  .nav-links{display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0}
-  .nav-links a{font-size:14px;color:var(--muted);position:relative;padding:6px 0;white-space:nowrap;transition:color .2s}
-  .nav-links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:right .25s}
-  .nav-links a:hover,.nav-links a.active{color:var(--ink)}
-  .nav-links a:hover::after,.nav-links a.active::after{right:0}
-  .nav-cta{background:var(--ink);color:#fff;font-size:13.5px;padding:11px 20px;border-radius:8px;white-space:nowrap;transition:background .2s,transform .2s}
-  .nav-cta:hover{background:var(--green);transform:translateY(-1px)}
-  .menu-toggle{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:8px;background:transparent;align-items:center;justify-content:center;flex-direction:column;gap:5px}
-  .menu-toggle span{display:block;width:18px;height:1.5px;background:var(--ink);transition:transform .25s,opacity .25s}
-  .menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
-  .menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
-  .menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-
-  /* ---------- Shared ---------- */
-  section{scroll-margin-top:88px}
-  .section{padding:96px 0}
-  .section--tight{padding:76px 0}
-  .section--alt{background:var(--stone-2)}
-  .section--ink{background:var(--ink);color:#e9e6de}
-  .eyebrow{font-size:11.5px;letter-spacing:.3em;color:var(--gold);text-transform:uppercase;margin:0 0 16px;font-weight:600}
-  .section--ink .eyebrow{color:var(--gold-soft)}
-  h2.title{font-family:var(--serif);font-size:clamp(28px,4vw,40px);line-height:1.35;letter-spacing:.01em;color:var(--ink);margin:0 0 18px;font-weight:700}
-  .section--ink h2.title{color:#f5f2ea}
-  .lede{max-width:660px;color:var(--muted);font-size:16px;margin:0}
-  .section--ink .lede{color:#aeb6af}
-  .head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px}
-  .head-row .lede{max-width:480px}
-  .rule{height:1px;background:var(--line);margin-top:22px}
-  .section--ink .rule{background:rgba(255,255,255,.13)}
-
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:9px;padding:14px 26px;font-size:14.5px;font-weight:600;border:1px solid transparent;transition:transform .2s,background .2s,border-color .2s,color .2s}
+  /* ---------- shared ---------- */
+  section{scroll-margin-top:80px}
+  .sec{padding:88px 0;border-bottom:1px solid var(--line)}
+  .sec:last-of-type{border-bottom:0}
+  .sec-head{display:flex;align-items:baseline;gap:18px;margin-bottom:36px}
+  .sec-no{font-family:var(--serif);font-size:13px;color:var(--gold);letter-spacing:.1em;flex-shrink:0}
+  .sec-head h2{font-family:var(--serif);font-size:clamp(24px,3.2vw,32px);font-weight:700;margin:0;line-height:1.35;letter-spacing:.01em}
+  .eyebrow{font-size:11.5px;letter-spacing:.26em;color:var(--accent);margin:0 0 22px;font-weight:600}
+  .lede{font-size:16px;color:var(--ink-soft);line-height:2;margin:0}
+  .muted{color:var(--muted)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:8px;padding:14px 26px;font-size:14.5px;font-weight:600;border:1px solid transparent;transition:transform .2s,background .2s,border-color .2s}
   .btn:hover{transform:translateY(-2px)}
-  .btn--gold{background:var(--gold);color:#fff}
-  .btn--gold:hover{background:#957340}
-  .btn--ghost{border-color:rgba(255,255,255,.32);color:#f0ede5;background:transparent}
-  .btn--ghost:hover{border-color:var(--gold-soft);color:#fff}
-  .btn--dark{background:var(--ink);color:#fff}
-  .btn--dark:hover{background:var(--green)}
-  .btn--line{background:transparent;border-color:var(--line);color:var(--ink)}
-  .btn--line:hover{border-color:var(--gold);color:var(--gold)}
-  .btn svg{width:16px;height:16px;flex-shrink:0}
+  .btn svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .btn--primary{background:var(--accent);color:#fff}
+  .btn--primary:hover{background:#253c31}
+  .btn--line{background:transparent;border-color:var(--line-strong);color:var(--ink)}
+  .btn--line:hover{border-color:var(--accent)}
+  .btn--light{background:#fff;color:var(--deep)}
+  .btn--light:hover{background:#eee9dd}
+  .btn--ghost-light{background:transparent;border-color:rgba(255,255,255,.38);color:#f2f0e9}
+  .btn--ghost-light:hover{border-color:#fff}
 
-  /* ---------- Hero ---------- */
-  .hero{position:relative;overflow:hidden;background:var(--ink);color:#f2efe7;padding:104px 0 0;isolation:isolate}
-  .hero::before{content:"";position:absolute;inset:0;z-index:-2;background:
-    radial-gradient(ellipse 60% 70% at 78% 18%,rgba(169,132,78,.20),transparent 68%),
-    radial-gradient(ellipse 50% 60% at 8% 90%,rgba(76,96,85,.34),transparent 70%),
-    linear-gradient(145deg,#1b211f 0%,#222b26 52%,#171c1a 100%)}
-  .hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.22;pointer-events:none;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
-  .veins{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.5}
-  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center;padding-bottom:88px}
-  .hero h1{font-family:var(--serif);font-size:clamp(38px,5.6vw,66px);line-height:1.28;letter-spacing:.01em;margin:0 0 22px;font-weight:700;color:#f7f4ec}
-  .hero h1 em{font-style:normal;color:var(--gold-soft)}
-  .hero-slogan{display:inline-flex;align-items:center;gap:12px;font-size:14px;letter-spacing:.12em;color:var(--gold-soft);margin:0 0 26px}
-  .hero-slogan::before{content:"";width:30px;height:1px;background:var(--gold)}
-  .hero p.desc{color:#b8c0b9;font-size:16px;max-width:520px;margin:0 0 34px;line-height:2}
-  .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
-  .hero-note{margin-top:30px;font-size:12.5px;color:#8e988f;line-height:1.9}
+  /* ---------- hero ---------- */
+  .hero{padding:88px 0 92px;border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:72px;align-items:center}
+  .hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(34px,4.6vw,56px);line-height:1.32;letter-spacing:.005em;margin:0 0 26px}
+  .hero h1 .domain{display:block;color:var(--accent);white-space:nowrap}
+  .hero h1 .one{color:var(--gold);font-style:normal}
+  .hero-desc{font-size:16px;color:var(--ink-soft);line-height:2;max-width:520px;margin:0 0 28px}
+  .quota-badge{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line-strong);border-radius:100px;padding:8px 16px;font-size:13px;color:var(--ink);background:#fff;margin-bottom:32px}
+  .quota-badge i{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
+  .quota-badge b{font-weight:700}
+  .hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .hero-mail{font-size:13.5px;color:var(--muted);border-bottom:1px solid var(--line-strong);padding-bottom:2px;transition:color .2s,border-color .2s}
+  .hero-mail:hover{color:var(--accent);border-color:var(--accent)}
 
-  /* stone sample card */
-  .samples{position:relative;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px;backdrop-filter:blur(6px)}
-  .samples-head{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.12);margin-bottom:20px}
-  .samples-head strong{font-family:var(--serif);font-size:17px;color:#f3f0e8;font-weight:600}
-  .samples-head span{font-size:11px;letter-spacing:.2em;color:var(--gold-soft)}
-  .sample-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-  .sample{border-radius:10px;overflow:hidden;border:1px solid rgba(255,255,255,.1);background:#fff}
-  .sample-swatch{height:88px;position:relative}
-  .sample-swatch::after{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.04 .18' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23m)' opacity='.42'/%3E%3C/svg%3E");mix-blend-mode:multiply;opacity:.55}
-  .sw-1{background:linear-gradient(125deg,#f4f1e9,#d9d3c6 55%,#efece3)}
-  .sw-2{background:linear-gradient(125deg,#4a4640,#22201d 60%,#3a3631)}
-  .sw-3{background:linear-gradient(125deg,#9a958b,#6b675f 55%,#8e8a80)}
-  .sw-4{background:linear-gradient(125deg,#d8c9ae,#b9a888 55%,#cfbf9f)}
-  .sample-label{padding:9px 12px 10px;background:rgba(255,255,255,.96);display:flex;justify-content:space-between;align-items:center}
-  .sample-label b{font-size:12.5px;font-weight:600;color:var(--ink)}
-  .sample-label i{font-style:normal;font-size:10px;color:#92998f;letter-spacing:.1em}
-  .samples-foot{display:flex;justify-content:space-between;gap:14px;margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);font-size:12px;color:#a7b0a7;line-height:1.7}
-  .samples-foot b{color:var(--gold-soft);font-weight:600}
+  /* domain plaque */
+  .plaque{background:var(--deep);color:#f3f0e8;border-radius:16px;padding:44px 38px;position:relative;overflow:hidden;min-height:330px;display:flex;flex-direction:column;justify-content:space-between}
+  .plaque::after{content:"";position:absolute;inset:0;opacity:.16;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E")}
+  .plaque-veins{position:absolute;inset:0;pointer-events:none;opacity:.35}
+  .plaque-top,.plaque-bottom,.plaque-mid{position:relative;z-index:1}
+  .plaque-top{display:flex;justify-content:space-between;align-items:center;font-size:11px;letter-spacing:.24em;color:#b9c3b9}
+  .plaque-top .tick{width:26px;height:1px;background:var(--gold)}
+  .plaque-mid{padding:26px 0}
+  .plaque-mid .label{font-size:12px;letter-spacing:.2em;color:var(--gold);margin:0 0 14px}
+  .plaque-mid .domain{font-family:var(--serif);font-size:clamp(38px,5vw,60px);font-weight:700;line-height:1.15;letter-spacing:.02em;color:#faf8f1}
+  .plaque-mid .sub{font-size:13px;color:#aeb9ae;margin:16px 0 0;line-height:1.9}
+  .plaque-bottom{border-top:1px solid rgba(255,255,255,.16);padding-top:18px;display:flex;justify-content:space-between;gap:16px;font-size:12px;color:#aeb9ae}
+  .plaque-bottom b{color:#e8e4d8;font-weight:600}
 
-  .hero-strip{border-top:1px solid rgba(255,255,255,.11);background:rgba(0,0,0,.16)}
-  .strip-inner{display:grid;grid-template-columns:repeat(4,1fr)}
-  .strip-item{padding:22px 18px;display:flex;align-items:center;gap:12px;border-right:1px solid rgba(255,255,255,.09);font-size:13.5px;color:#c8cec7}
-  .strip-item:last-child{border-right:0}
-  .strip-item b{color:var(--gold-soft);font-family:var(--serif);font-size:15px;font-weight:600}
-  .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+  /* ---------- intro ---------- */
+  .intro-grid{display:grid;grid-template-columns:.34fr .66fr;gap:56px;align-items:start}
+  .intro-grid p{margin:0 0 18px;font-size:15.5px;color:var(--ink-soft);line-height:2.05}
+  .intro-grid p:last-child{margin-bottom:0}
+  .intro-note{margin-top:30px;padding:16px 20px;border-left:2px solid var(--gold);background:#f4f1e9;font-size:13px;color:var(--muted);line-height:1.9}
 
-  /* ---------- About ---------- */
-  .about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
-  .domain-card{background:var(--ink);color:#f4f1e9;border-radius:18px;padding:38px;position:relative;overflow:hidden}
-  .domain-card::after{content:"";position:absolute;right:-70px;bottom:-90px;width:230px;height:230px;border:1px solid rgba(205,176,131,.25);border-radius:50%;box-shadow:0 0 0 34px rgba(205,176,131,.07),0 0 0 68px rgba(205,176,131,.045)}
-  .domain-card small{font-size:11px;letter-spacing:.28em;color:var(--gold-soft);display:block;margin-bottom:20px}
-  .domain-card .domain{font-family:var(--serif);font-size:clamp(30px,4vw,44px);font-weight:700;line-height:1.2;position:relative;z-index:1}
-  .domain-card p{color:#aeb7ae;font-size:14px;margin:18px 0 0;position:relative;z-index:1;line-height:1.95}
-  .about-body p{margin:0 0 18px;color:var(--muted);line-height:2}
-  .about-body p strong{color:var(--ink);font-weight:600}
-  .feature-list{display:grid;gap:0;margin-top:32px;border-top:1px solid var(--line)}
-  .feature{display:grid;grid-template-columns:44px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line);align-items:start}
-  .feature-num{font-family:var(--serif);font-size:15px;color:var(--gold);padding-top:1px}
-  .feature h3{font-size:16px;margin:0 0 4px;color:var(--ink);font-weight:600}
-  .feature p{margin:0;font-size:14px;color:var(--muted);line-height:1.85}
-  .disclaimer{margin-top:26px;padding:14px 18px;border-left:2px solid var(--gold);background:rgba(169,132,78,.07);font-size:13px;color:var(--muted);line-height:1.9}
+  /* ---------- roles ---------- */
+  .role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .role{padding:34px 30px;border-right:1px solid var(--line)}
+  .role:last-child{border-right:0}
+  .role .r-label{font-size:11.5px;letter-spacing:.2em;color:var(--gold);margin-bottom:20px}
+  .role h3{font-family:var(--serif);font-size:21px;margin:0 0 14px;font-weight:700;color:var(--ink)}
+  .role p{font-size:14.5px;color:var(--ink-soft);margin:0;line-height:1.95}
+  .role .r-domain{font-family:var(--serif);color:var(--accent);font-weight:700}
+  .role-note{margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.8}
 
-  /* ---------- Types ---------- */
-  .type-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-  .type-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px 26px;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
-  .type-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#cbbb9c}
-  .type-icon{width:46px;height:46px;border-radius:11px;background:var(--stone-2);color:var(--ink);display:grid;place-items:center;margin-bottom:22px}
-  .type-icon svg{width:23px;height:23px;stroke:currentColor;fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-  .type-card h3{font-family:var(--serif);font-size:21px;margin:0 0 6px;color:var(--ink)}
-  .type-tag{font-size:11px;letter-spacing:.16em;color:var(--gold);margin-bottom:16px}
-  .type-card p{font-size:13.5px;color:var(--muted);margin:0 0 18px;line-height:1.9;min-height:52px}
-  .type-card ul{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:9px;flex:1}
-  .type-card li{font-size:13px;color:var(--text);display:flex;gap:9px;align-items:flex-start;line-height:1.7}
-  .type-card li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold);margin-top:8px;flex-shrink:0}
-  .type-link{font-size:13px;color:var(--ink);font-weight:600;display:inline-flex;align-items:center;gap:7px;border-top:1px solid var(--line);padding-top:16px;transition:gap .2s,color .2s}
-  .type-link:hover{gap:12px;color:var(--gold)}
+  /* ---------- quota ---------- */
+  .quota{background:var(--deep);color:#f2f0e8;padding:76px 0;border-bottom:0}
+  .quota-inner{display:grid;grid-template-columns:auto 1fr;gap:60px;align-items:center}
+  .quota-num{font-family:var(--serif);font-size:clamp(110px,15vw,180px);line-height:.9;font-weight:700;color:var(--gold);letter-spacing:-.04em}
+  .quota .eyebrow{color:#c3b18c}
+  .quota h2{font-family:var(--serif);font-size:clamp(26px,3.6vw,38px);margin:0 0 16px;line-height:1.4;color:#faf8f1;font-weight:700}
+  .quota p{font-size:15px;color:#b7c1b7;line-height:2;margin:0;max-width:560px}
+  .quota .btn{margin-top:28px}
 
-  /* ---------- Benefits ---------- */
-  .benefit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
-  .benefit{background:var(--stone);padding:30px 26px}
-  .benefit .b-no{font-family:var(--serif);font-size:13px;color:var(--gold);letter-spacing:.1em}
-  .benefit h3{font-size:16.5px;color:var(--ink);margin:12px 0 8px;font-weight:600}
-  .benefit p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.9}
-  .table-wrap{margin-top:44px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px 10px}
-  .table-title{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:16px;flex-wrap:wrap}
-  .table-title h3{font-family:var(--serif);font-size:19px;margin:0;color:var(--ink)}
-  .table-title span{font-size:12px;color:var(--muted)}
-  .table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-  table{width:100%;border-collapse:collapse;min-width:640px;font-size:13.5px}
-  th,td{padding:14px 12px;text-align:center;border-bottom:1px solid #eee9df}
-  th:first-child,td:first-child{text-align:left;padding-left:2px}
-  thead th{font-size:12.5px;font-weight:600;color:var(--ink);background:var(--stone);white-space:nowrap}
-  tbody tr:last-child td{border-bottom:0}
-  tbody td:first-child{color:var(--text);font-weight:500;white-space:nowrap}
-  .yes{color:var(--gold);font-weight:700}
-  .no{color:#c4c7c1}
-  .table-note{font-size:12px;color:var(--muted);padding:12px 0 16px;line-height:1.8}
+  /* ---------- contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+  .contact-guide p{font-size:15.5px;color:var(--ink-soft);line-height:2;margin:0 0 18px}
+  .contact-steps{margin:26px 0 0;padding:0;list-style:none;counter-reset:cs}
+  .contact-steps li{counter-increment:cs;position:relative;padding-left:34px;font-size:13.5px;color:var(--muted);line-height:1.8;margin-bottom:12px}
+  .contact-steps li::before{content:counter(cs,decimal-leading-zero);position:absolute;left:0;top:0;font-family:var(--serif);font-size:13px;color:var(--gold)}
+  .mail-card{border:1px solid var(--line-strong);background:#fff;border-radius:14px;padding:34px}
+  .mail-card .c-label{font-size:11.5px;letter-spacing:.22em;color:var(--muted);margin:0 0 16px}
+  .mail-card .c-address{font-family:var(--serif);font-size:clamp(20px,3.1vw,30px);font-weight:700;color:var(--accent);line-height:1.4;word-break:break-all;margin:0 0 8px}
+  .mail-card .c-sub{font-size:12.5px;color:var(--muted);margin:0 0 28px;line-height:1.8}
+  .mail-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .copy-status{font-size:12.5px;color:var(--accent);margin:16px 0 0;min-height:20px}
+  .mail-only{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.8;margin-bottom:0}
 
-  /* ---------- Process ---------- */
-  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative;margin-top:8px}
-  .steps::before{content:"";position:absolute;left:9%;right:9%;top:29px;height:1px;background:rgba(205,176,131,.42)}
-  .step{text-align:center;padding:0 12px;position:relative}
-  .step-num{width:58px;height:58px;margin:0 auto 22px;border-radius:50%;background:var(--ink);border:1px solid rgba(205,176,131,.5);display:grid;place-items:center;font-family:var(--serif);font-size:17px;color:var(--gold-soft);position:relative;z-index:1;transition:background .25s,transform .25s}
-  .step:hover .step-num{background:var(--green);transform:scale(1.06)}
-  .step h3{font-family:var(--serif);font-size:16.5px;color:#f4f1e9;margin:0 0 8px;font-weight:600}
-  .step p{font-size:13px;color:#aab3aa;margin:0;line-height:1.85}
-  .process-cta{margin-top:52px;padding:28px 32px;border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:rgba(255,255,255,.035)}
-  .process-cta p{margin:0;font-size:14px;color:#c3cac2;line-height:1.8}
-  .process-cta p b{color:#f2efe7;font-weight:600}
+  /* ---------- footer ---------- */
+  .site-footer{border-top:1px solid var(--line);background:#f5f2ea;padding:44px 0 38px}
+  .footer-inner{display:flex;justify-content:space-between;gap:36px;flex-wrap:wrap;align-items:flex-start}
+  .footer-brand b{font-family:var(--serif);font-size:18px;color:var(--ink)}
+  .footer-brand span{display:block;font-size:11.5px;letter-spacing:.16em;color:var(--muted);margin-top:6px}
+  .footer-note{font-size:12.5px;color:var(--muted);line-height:1.9;max-width:620px;margin:0}
 
-  /* ---------- Apply ---------- */
-  .apply-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:56px;align-items:start}
-  .apply-aside .lede{margin-bottom:30px}
-  .channel{display:flex;gap:15px;padding:18px 0;border-top:1px solid var(--line)}
-  .channel:last-of-type{border-bottom:1px solid var(--line)}
-  .channel-ic{width:38px;height:38px;flex-shrink:0;border-radius:9px;background:var(--stone-2);display:grid;place-items:center}
-  .channel-ic svg{width:19px;height:19px;stroke:var(--ink);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
-  .channel h3{margin:0 0 3px;font-size:14.5px;color:var(--ink);font-weight:600}
-  .channel p{margin:0;font-size:13px;color:var(--muted);line-height:1.75}
-  .form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px;box-shadow:var(--shadow)}
-  .form-head{margin-bottom:26px;padding-bottom:20px;border-bottom:1px solid var(--line)}
-  .form-head h3{font-family:var(--serif);font-size:22px;margin:0 0 5px;color:var(--ink)}
-  .form-head p{margin:0;font-size:13px;color:var(--muted)}
-  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .field{display:flex;flex-direction:column;gap:7px}
-  .field--full{grid-column:1 / -1}
-  .field label{font-size:13px;font-weight:600;color:var(--ink)}
-  .field label .req{color:var(--gold);margin-left:3px}
-  .field input,.field select,.field textarea{width:100%;background:var(--stone);border:1px solid var(--line);border-radius:8px;padding:11px 13px;font-size:14px;transition:border-color .2s,background .2s;outline:none}
-  .field textarea{resize:vertical;min-height:104px;line-height:1.75}
-  .field select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' fill='none' stroke='%236e7770' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px}
-  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);background-color:#fff}
-  .field input[aria-invalid="true"],.field select[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:#b4543f;background-color:#fdf6f3}
-  .field .hint{font-size:11.5px;color:var(--muted);line-height:1.6}
-  .check{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--muted);line-height:1.7;margin:22px 0 20px}
-  .check input{width:16px;height:16px;margin:3px 0 0;accent-color:var(--gold);flex-shrink:0}
-  .form-submit{width:100%;border:0}
-  .form-error{font-size:12.5px;color:#a4402d;margin:10px 0 0;min-height:0}
-  .form-foot{margin-top:16px;font-size:11.5px;color:var(--muted);line-height:1.8;text-align:center}
-  .result{margin-top:22px;padding:22px;border:1px solid #cbbb9c;background:var(--stone);border-radius:12px}
-  .result[hidden]{display:none}
-  .result h4{font-family:var(--serif);font-size:17px;margin:0 0 8px;color:var(--ink)}
-  .result p{font-size:12.5px;color:var(--muted);margin:0 0 14px;line-height:1.85}
-  .result-code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.75;white-space:pre-wrap;word-break:break-word;background:#fff;border:1px dashed var(--line);padding:12px;border-radius:7px;color:var(--ink);margin-bottom:14px;max-height:230px;overflow:auto}
-  .result-actions{display:flex;gap:10px;flex-wrap:wrap}
-  .result-actions button{font-size:12.5px;padding:9px 15px;border-radius:7px;border:1px solid var(--line);background:#fff;color:var(--ink)}
-  .result-actions button:hover{border-color:var(--gold);color:var(--gold)}
-
-  /* ---------- Contact ---------- */
-  .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .contact-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;min-height:158px;display:flex;flex-direction:column}
-  .contact-card .c-label{font-size:11.5px;letter-spacing:.16em;color:var(--gold);margin-bottom:14px}
-  .contact-card .c-value{font-family:var(--serif);font-size:18px;color:var(--ink);font-weight:600;line-height:1.5;word-break:break-all}
-  .pending{display:inline-flex;align-items:center;gap:6px;font-family:var(--sans);font-size:13px;font-weight:500;color:var(--muted);background:var(--stone-2);border:1px dashed #c9c2b4;border-radius:6px;padding:5px 10px}
-  .pending::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--gold)}
-  .contact-card .c-note{font-size:12px;color:var(--muted);margin:12px 0 0;line-height:1.75}
-  .contact-banner{margin-top:26px;display:flex;gap:14px;align-items:flex-start;background:rgba(169,132,78,.08);border:1px solid #e5d9c1;border-radius:12px;padding:18px 22px}
-  .contact-banner svg{width:19px;height:19px;flex-shrink:0;stroke:var(--gold);fill:none;stroke-width:1.7;margin-top:3px}
-  .contact-banner p{margin:0;font-size:13px;color:var(--muted);line-height:1.85}
-  .contact-banner b{color:var(--ink)}
-
-  /* ---------- FAQ ---------- */
-  .faq-grid{display:grid;grid-template-columns:1fr 1.35fr;gap:64px;align-items:start}
-  details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:12px;overflow:hidden}
-  summary{cursor:pointer;list-style:none;padding:18px 22px;font-size:14.5px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between;gap:16px;align-items:center}
-  summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";font-family:var(--serif);font-size:20px;color:var(--gold);line-height:1;flex-shrink:0}
-  details[open] summary::after{content:"−"}
-  details[open] summary{border-bottom:1px solid var(--line)}
-  details .a{padding:16px 22px 20px;font-size:13.5px;color:var(--muted);line-height:1.95;margin:0}
-
-  /* ---------- Footer ---------- */
-  .site-footer{background:#141917;color:#aab2aa;padding:60px 0 26px}
-  .footer-top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.1)}
-  .footer-brand .brand-name{color:#f4f1e9}
-  .footer-brand p{font-size:13px;margin:16px 0 0;line-height:1.95;max-width:300px}
-  .footer-col h4{font-size:12px;letter-spacing:.2em;color:var(--gold-soft);margin:0 0 18px;font-weight:600}
-  .footer-col a,.footer-col span{display:block;font-size:13px;padding:5px 0;color:#aab2aa;transition:color .2s}
-  .footer-col a:hover{color:#fff}
-  .footer-bottom{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:22px;font-size:12px;color:#7d877e;line-height:1.9}
-  .footer-bottom p{margin:0;max-width:760px}
-
-  .mobile-cta{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:90;background:var(--gold);color:#fff;text-align:center;padding:14px;border-radius:10px;font-size:14.5px;font-weight:600;box-shadow:0 8px 26px rgba(27,33,31,.28);opacity:0;pointer-events:none;transform:translateY(16px);transition:opacity .3s,transform .3s}
-  .mobile-cta.show{opacity:1;pointer-events:auto;transform:none}
-
-  /* ---------- Reveal ---------- */
-  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
-  .js .reveal.is-visible{opacity:1;transform:none}
-
-  /* ---------- Responsive ---------- */
-  @media (max-width:1024px){
-    .nav-links{gap:16px}
-    .nav-links a{font-size:13px}
-    .hero-grid{gap:36px}
-    .type-grid{grid-template-columns:repeat(2,1fr)}
-    .contact-grid{grid-template-columns:repeat(2,1fr)}
-    .about-grid,.apply-grid,.faq-grid{gap:40px}
+  /* ---------- responsive ---------- */
+  @media (max-width:960px){
+    .hero-grid{gap:40px}
+    .intro-grid,.contact-grid{gap:36px}
+    .quota-inner{gap:40px}
+    .role{padding:28px 22px}
   }
-  @media (max-width:860px){
-    .menu-toggle{display:flex}
-    .nav{height:64px}
-    .nav-links{position:absolute;top:64px;left:0;right:0;background:var(--stone);border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:0;padding:8px 22px 20px;box-shadow:0 16px 30px rgba(27,33,31,.1);display:none}
-    .nav-links.open{display:flex}
-    .nav-links li{width:100%}
-    .nav-links a{display:block;padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-    .nav-links a::after{display:none}
-    .nav-cta{display:none}
-    .hero{padding-top:68px}
-    .hero-grid{grid-template-columns:1fr;padding-bottom:60px}
-    .samples{max-width:520px}
-    .strip-inner{grid-template-columns:repeat(2,1fr)}
-    .strip-item:nth-child(2){border-right:0}
-    .strip-item:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.09)}
-    .about-grid,.apply-grid,.faq-grid{grid-template-columns:1fr}
-    .domain-card{max-width:520px}
-    .steps{grid-template-columns:repeat(2,1fr);gap:28px 0}
-    .steps::before{display:none}
-    .step:nth-child(5){grid-column:1 / -1}
-    .footer-top{grid-template-columns:1fr 1fr;gap:32px}
-    .footer-brand{grid-column:1 / -1}
-    .mobile-cta{display:block}
-    section{scroll-margin-top:72px}
+  @media (max-width:800px){
+    .nav{height:66px}
+    .hero{padding:60px 0 68px}
+    .hero-grid{grid-template-columns:1fr;gap:44px}
+    .plaque{min-height:0;max-width:560px}
+    .intro-grid,.contact-grid{grid-template-columns:1fr}
+    .role-grid{grid-template-columns:1fr}
+    .role{border-right:0;border-bottom:1px solid var(--line)}
+    .role:last-child{border-bottom:0}
+    .sec{padding:64px 0}
+    .quota{padding:60px 0}
   }
   @media (max-width:600px){
     .wrap{width:min(100% - 32px,var(--maxw))}
-    .section{padding:64px 0}
-    .section--tight{padding:56px 0}
-    .head-row{display:block;margin-bottom:34px}
-    .head-row .lede{margin-top:14px}
-    .hero{padding-top:52px}
-    .hero h1{font-size:clamp(32px,9vw,44px)}
-    .hero p.desc{font-size:14.5px}
+    .head-link span{display:none}
+    .head-link{padding:9px 12px}
+    .hero h1{font-size:clamp(30px,8.4vw,42px)}
+    .hero h1 .domain{white-space:normal}
+    .hero-desc{font-size:15px}
+    .hero-actions{align-items:stretch;flex-direction:column}
     .hero-actions .btn{width:100%}
-    .samples{padding:18px}
-    .sample-swatch{height:70px}
-    .strip-item{padding:16px 10px;font-size:12px}
-    .type-grid,.benefit-grid,.contact-grid{grid-template-columns:1fr}
-    .type-card p{min-height:0}
-    .benefit{padding:24px 20px}
-    .table-wrap{padding:20px 16px 8px}
-    .steps{grid-template-columns:1fr;gap:24px}
-    .step{display:grid;grid-template-columns:58px 1fr;gap:0 18px;text-align:left;align-items:start}
-    .step-num{margin:0;grid-row:1 / 3}
-    .step h3{align-self:end;margin:0 0 4px}
-    .step p{grid-column:2}
-    .step:nth-child(5){grid-column:auto}
-    .form-card{padding:22px 18px}
-    .form-grid{grid-template-columns:1fr}
-    .process-cta{padding:22px}
-    .process-cta .btn{width:100%}
-    .footer-top{grid-template-columns:1fr}
-    .footer-brand{grid-column:auto}
-    .contact-banner{flex-direction:column;gap:8px}
+    .hero-mail{text-align:center;padding-bottom:6px;border-bottom:0}
+    .plaque{padding:28px 24px}
+    .plaque-mid{padding:20px 0}
+    .plaque-mid .domain{font-size:clamp(34px,9vw,46px)}
+    .plaque-bottom{flex-direction:column;gap:6px}
+    .sec{padding:52px 0}
+    .sec-head{gap:12px;margin-bottom:26px}
+    .quota-inner{grid-template-columns:1fr;gap:8px}
+    .quota-num{font-size:112px}
+    .quota .btn{width:100%}
+    .mail-card{padding:24px 20px}
+    .mail-actions{flex-direction:column}
+    .mail-actions .btn{width:100%}
+    .footer-inner{flex-direction:column;gap:18px}
   }
   @media (prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     *,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important}
-    .js .reveal{opacity:1;transform:none}
   }
   @media print{
-    .site-header,.mobile-cta,.hero-actions,.form-card,.menu-toggle{display:none !important}
+    .site-header{position:static}
+    .btn{display:none}
     body{background:#fff}
-    .section{padding:24px 0}
-    .js .reveal{opacity:1;transform:none}
+    .sec,.hero{padding:24px 0}
   }
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main">跳转到主要内容</a>
+<a class="skip" href="#main">跳转到主要内容</a>
 
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="#top" aria-label="石材.中国 首页">
+    <a class="brand" href="#top" aria-label="石材.中国 页面顶部">
       <span class="brand-mark" aria-hidden="true"></span>
-      <span>
-        <span class="brand-name">石材.中国</span>
-        <span class="brand-sub">行业合作招商</span>
-      </span>
+      <span class="brand-text"><b>石材.中国</b><span>技术合作伙伴招募</span></span>
     </a>
-    <nav aria-label="主导航">
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">平台定位</a></li>
-        <li><a href="#types">合作类型</a></li>
-        <li><a href="#benefits">合作权益</a></li>
-        <li><a href="#process">合作流程</a></li>
-        <li><a href="#apply">在线申请</a></li>
-        <li><a href="#contact">联系我们</a></li>
-      </ul>
-    </nav>
-    <a class="nav-cta" href="#apply">提交合作申请</a>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="navLinks">
-      <span></span><span></span><span></span>
-    </button>
+    <a class="head-link" href="mailto:mfujun@agent.qq.com?subject=%E7%9F%B3%E6%9D%90.%E4%B8%AD%E5%9B%BD%20%E6%8A%80%E6%9C%AF%E5%90%88%E4%BD%9C">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      <span>邮件联系</span>
+    </a>
   </div>
 </header>
 
 <main id="main">
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
-    <svg class="veins" viewBox="0 0 1440 700" preserveAspectRatio="none" aria-hidden="true">
-      <g fill="none" stroke="#cdb083" stroke-width="1" opacity=".28">
-        <path d="M-40 560 C 220 470, 330 620, 560 470 S 900 300, 1120 350 S 1380 220, 1500 120"/>
-        <path d="M-40 585 C 240 500, 340 645, 575 495 S 910 325, 1130 375 S 1390 245, 1500 145"/>
-        <path d="M980 -30 C 930 150, 1080 250, 1010 410 S 880 620, 940 730"/>
-        <path d="M1002 -30 C 952 155, 1102 255, 1032 415 S 902 625, 962 730"/>
-      </g>
-    </svg>
-    <div class="wrap">
-      <div class="hero-grid">
-        <div>
-          <p class="hero-slogan">中文域名 · 石材行业合作入口</p>
-          <h1>一块好石材，<br><em>值得被更多人看见。</em></h1>
-          <p class="desc">石材.中国 面向石材行业的供应商、采购商、经销商与服务商开放合作。我们把这个中文域名定位为行业信息的统一入口，让找石材、找渠道、找服务的人，先找到一个记得住的名字。</p>
-          <div class="hero-actions">
-            <a class="btn btn--gold" href="#apply">提交合作申请
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>
-            </a>
-            <a class="btn btn--ghost" href="#types">了解合作模式</a>
-          </div>
-          <p class="hero-note">本页为合作招商展示页面。页面所述定位、模式与权益为招商方案内容，具体合作条件以双方确认的正式文件为准。</p>
-        </div>
-
-        <div class="samples" aria-label="石材品类示意">
-          <div class="samples-head">
-            <strong>石材品类示意</strong>
-            <span>MATERIAL / 04</span>
-          </div>
-          <div class="sample-grid">
-            <div class="sample">
-              <div class="sample-swatch sw-1" aria-hidden="true"></div>
-              <div class="sample-label"><b>浅色大理石</b><i>01</i></div>
-            </div>
-            <div class="sample">
-              <div class="sample-swatch sw-2" aria-hidden="true"></div>
-              <div class="sample-label"><b>深色大理石</b><i>02</i></div>
-            </div>
-            <div class="sample">
-              <div class="sample-swatch sw-3" aria-hidden="true"></div>
-              <div class="sample-label"><b>花岗岩</b><i>03</i></div>
-            </div>
-            <div class="sample">
-              <div class="sample-swatch sw-4" aria-hidden="true"></div>
-              <div class="sample-label"><b>砂岩／洞石</b><i>04</i></div>
-            </div>
-          </div>
-          <div class="samples-foot">
-            <span>色块为 CSS 绘制的示意效果，<b>不代表具体石材样品</b>。</span>
-          </div>
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">中文域名 · 石材行业 · 技术合作</p>
+        <h1><span class="domain">石材.中国</span>诚邀 <span class="one">1 名</span> 技术合作伙伴</h1>
+        <p class="hero-desc">我方提供中文域名「石材.中国」，合作方提供技术能力，双方共同推进项目。本次仅招募 1 名技术合作伙伴。</p>
+        <div class="quota-badge"><i aria-hidden="true"></i><span>本次名额 <b>仅 1 名</b>，不设多名并行</span></div>
+        <div class="hero-actions">
+          <a class="btn btn--primary" href="mailto:mfujun@agent.qq.com?subject=%E7%9F%B3%E6%9D%90.%E4%B8%AD%E5%9B%BD%20%E6%8A%80%E6%9C%AF%E5%90%88%E4%BD%9C">发送合作邮件
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>
+          </a>
+          <a class="hero-mail" href="mailto:mfujun@agent.qq.com">mfujun@agent.qq.com</a>
         </div>
       </div>
-    </div>
-    <div class="hero-strip">
-      <div class="wrap strip-inner">
-        <div class="strip-item"><span class="dot"></span><span><b>供应商</b> · 矿山与加工厂</span></div>
-        <div class="strip-item"><span class="dot"></span><span><b>采购商</b> · 工程与装饰方</span></div>
-        <div class="strip-item"><span class="dot"></span><span><b>经销商</b> · 渠道与门店</span></div>
-        <div class="strip-item"><span class="dot"></span><span><b>服务商</b> · 物流与配套</span></div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <div class="wrap">
-      <div class="head-row reveal">
-        <div>
-          <p class="eyebrow">Platform Positioning</p>
-          <h2 class="title">一个记得住的名字，<br>一个分得清的行业入口</h2>
-        </div>
-        <p class="lede">我们先把「石材.中国」做成一件事：让行业里不同的人，在同一处被看见、被找到。</p>
-      </div>
-
-      <div class="about-grid">
-        <div class="domain-card reveal">
-          <small>DOMAIN</small>
+      <div class="plaque" aria-label="中文域名 石材.中国">
+        <svg class="plaque-veins" viewBox="0 0 500 340" preserveAspectRatio="none" aria-hidden="true">
+          <g fill="none" stroke="#c9ab78" stroke-width="1" opacity=".45">
+            <path d="M-20 280 C 120 230, 200 310, 330 210 S 470 140, 540 90"/>
+            <path d="M-20 296 C 125 246, 205 326, 335 226 S 475 156, 540 106"/>
+            <path d="M390 -20 C 360 90, 430 150, 395 230 S 350 320, 380 360"/>
+          </g>
+        </svg>
+        <div class="plaque-top"><span>CHINESE DOMAIN NAME</span><span class="tick" aria-hidden="true"></span></div>
+        <div class="plaque-mid">
+          <p class="label">中文域名</p>
           <div class="domain">石材.中国</div>
-          <p>中文域名以中文字符构成，中文使用者可以直接记忆与输入。域名本身是访问入口，具体的栏目、服务与运营内容，由合作方案与后续建设共同确定。</p>
+          <p class="sub">行业名称即域名。中文使用者可以直接记忆，也可以直接口述。</p>
         </div>
+        <div class="plaque-bottom"><span>合作方式</span><b>域名 × 技术能力</b></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="about-body reveal">
-          <p><strong>石材.中国 是本页所招商的行业中文域名。</strong> 我们把平台定位为石材行业的信息聚合与对接入口，面向供应链上游的矿山与加工企业、下游的工程与装饰采购方、连接两端的经销渠道，以及提供物流、加工、检测、设计等配套服务的机构。</p>
-          <p>行业信息长期分散在各类渠道中。采购方需要逐一核实品类与供货能力，供应方需要反复说明自己做什么。我们用统一的中文入口承接这些需求，并按合作类型划分展示位置与对接方式，让每一次查找都更接近有效沟通。</p>
-
-          <div class="feature-list">
-            <div class="feature">
-              <span class="feature-num">01</span>
-              <div>
-                <h3>中文直达，降低记忆成本</h3>
-                <p>域名与行业名称一致，沟通时可以直接口述，不依赖英文字母拼写，减少转述误差。</p>
-              </div>
-            </div>
-            <div class="feature">
-              <span class="feature-num">02</span>
-              <div>
-                <h3>行业聚焦，避免信息混杂</h3>
-                <p>内容围绕石材品类与供应链角色组织，供应商、采购商、经销商、服务商各有明确位置。</p>
-              </div>
-            </div>
-            <div class="feature">
-              <span class="feature-num">03</span>
-              <div>
-                <h3>入口统一，便于长期沉淀</h3>
-                <p>合作方的内容与对接记录集中在同一入口下，便于持续更新，也便于行业用户反复回访。</p>
-              </div>
-            </div>
-          </div>
-          <p class="disclaimer">说明：以上为平台定位与合作方案的展示内容。本页不陈述已上线功能、既有合作方数量、资质或经营数据；相关事项须以双方确认的正式文件为准。</p>
+  <!-- ============ 01 项目简介 ============ -->
+  <section class="sec" id="intro">
+    <div class="wrap">
+      <div class="sec-head"><span class="sec-no">01</span><h2>项目简介</h2></div>
+      <div class="intro-grid">
+        <p class="muted" style="font-size:14px;margin:0">一个域名，<br>一个行业切入点。</p>
+        <div>
+          <p>「石材.中国」是一个与行业名称一致的中文域名。域名本身是访问入口，它的价值来自名称与行业之间的直接对应关系：石材行业的参与者听到这个名字，就能明白它指向什么。</p>
+          <p>石材行业涵盖矿山与加工、板材流通、工程采购、经销渠道及配套服务等环节，参与主体分布在不同环节，彼此之间需要反复说明身份、品类与需求。我们希望以这一中文域名为起点，与 1 名技术合作伙伴共同推进面向上述场景的项目。</p>
+          <div class="intro-note">本页只说明合作意向、双方分工、名额与联系入口。具体项目形态由双方沟通后共同确定。</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ TYPES ============ -->
-  <section class="section section--alt" id="types">
+  <!-- ============ 02 双方分工 ============ -->
+  <section class="sec" id="roles">
     <div class="wrap">
-      <div class="head-row reveal">
-        <div>
-          <p class="eyebrow">Cooperation Types</p>
-          <h2 class="title">四类合作方，四条清晰的路径</h2>
+      <div class="sec-head"><span class="sec-no">02</span><h2>双方分工</h2></div>
+      <div class="role-grid">
+        <div class="role">
+          <div class="r-label">我方</div>
+          <h3>提供中文域名</h3>
+          <p>我方提供中文域名 <span class="r-domain">「石材.中国」</span>，作为项目共同推进的名称基础与访问入口。</p>
         </div>
-        <p class="lede">您处在供应链的哪个位置，就走哪条路径。四类合作方共用同一入口，各自拥有不同的展示重点与对接方式。</p>
+        <div class="role">
+          <div class="r-label">合作方</div>
+          <h3>提供技术能力</h3>
+          <p>合作方提供技术能力，与域名一方形成互补，共同支撑项目推进。</p>
+        </div>
+        <div class="role">
+          <div class="r-label">双方</div>
+          <h3>共同推进项目</h3>
+          <p>双方围绕石材行业的合作场景共同推进项目，具体协作方式由双方沟通确认。</p>
+        </div>
       </div>
-
-      <div class="type-grid">
-        <article class="type-card reveal">
-          <div class="type-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19h18M5 19V9l7-5 7 5v10M9 19v-6h6v6M5 12h14"/></svg>
-          </div>
-          <h3>供应商</h3>
-          <p class="type-tag">SUPPLIER</p>
-          <p>矿山、荒料、板材加工与石材制品生产企业。</p>
-          <ul>
-            <li>按品类建立展示与查询线索</li>
-            <li>说明供货范围与加工能力</li>
-            <li>对接采购与渠道咨询</li>
-          </ul>
-          <a class="type-link" href="#apply" data-type="供应商">按此类型申请 →</a>
-        </article>
-
-        <article class="type-card reveal">
-          <div class="type-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5M8 10.5h5M10.5 8v5"/></svg>
-          </div>
-          <h3>采购商</h3>
-          <p class="type-tag">BUYER</p>
-          <p>工程建设、装饰设计、幕墙与家装采购主体。</p>
-          <ul>
-            <li>提交品类与规格需求</li>
-            <li>按需求匹配供货线索</li>
-            <li>获得样品与报价沟通支持</li>
-          </ul>
-          <a class="type-link" href="#apply" data-type="采购商">按此类型申请 →</a>
-        </article>
-
-        <article class="type-card reveal">
-          <div class="type-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><path d="M12 7.5v4M12 11.5 6.5 16M12 11.5 17.5 16"/></svg>
-          </div>
-          <h3>经销商</h3>
-          <p class="type-tag">DISTRIBUTOR</p>
-          <p>区域代理、批发商、石材市场与零售门店。</p>
-          <ul>
-            <li>呈现经营区域与主营品类</li>
-            <li>承接本地采购与询价</li>
-            <li>参与供需联动与内容共建</li>
-          </ul>
-          <a class="type-link" href="#apply" data-type="经销商">按此类型申请 →</a>
-        </article>
-
-        <article class="type-card reveal">
-          <div class="type-icon">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0-5.2 5.2L3 18l3 3 6.3-6.3a4 4 0 0 0 5.2-5.2l-2.7 2.7-2.5-.5-.5-2.5 2.7-2.7Z"/></svg>
-          </div>
-          <h3>服务商</h3>
-          <p class="type-tag">SERVICE</p>
-          <p>物流仓储、深加工、检测、设计与安装配套机构。</p>
-          <ul>
-            <li>列明服务类型与覆盖区域</li>
-            <li>对接供应链配套需求</li>
-            <li>参与行业内容与专题共建</li>
-          </ul>
-          <a class="type-link" href="#apply" data-type="服务商">按此类型申请 →</a>
-        </article>
-      </div>
+      <p class="role-note">以上三点是本次招募已明确的分工内容。本页不列示其他条款。</p>
     </div>
   </section>
 
-  <!-- ============ BENEFITS ============ -->
-  <section class="section" id="benefits">
-    <div class="wrap">
-      <div class="head-row reveal">
-        <div>
-          <p class="eyebrow">Partner Benefits</p>
-          <h2 class="title">合作方能获得什么</h2>
-        </div>
-        <p class="lede">我们按「被看见 — 被找到 — 被对接 — 被持续更新」四层来设计权益，不同合作类型对应不同的组合。</p>
-      </div>
-
-      <div class="benefit-grid reveal">
-        <div class="benefit">
-          <span class="b-no">BENEFIT / 01</span>
-          <h3>行业入口露出</h3>
-          <p>合作方名称与主营方向在「石材.中国」入口下集中呈现，对外沟通时可以给出统一的中文地址。</p>
-        </div>
-        <div class="benefit">
-          <span class="b-no">BENEFIT / 02</span>
-          <h3>品类专区展示</h3>
-          <p>按石材品类与工艺方向组织内容，让采购方按品类查找时，能够看到对应的供应与经销主体。</p>
-        </div>
-        <div class="benefit">
-          <span class="b-no">BENEFIT / 03</span>
-          <h3>供需信息对接</h3>
-          <p>采购需求与供货线索按类型归集，由运营方按流程转达给匹配的合作方，减少无效询问。</p>
-        </div>
-        <div class="benefit">
-          <span class="b-no">BENEFIT / 04</span>
-          <h3>内容共建</h3>
-          <p>合作方可以参与品类知识、选材说明与工程应用内容的共建，把专业经验沉淀为长期可见的资料。</p>
-        </div>
-        <div class="benefit">
-          <span class="b-no">BENEFIT / 05</span>
-          <h3>专题与活动联动</h3>
-          <p>围绕品类、区域与应用主题组织专题，合作方可以按方案参与，形成集中曝光与联动沟通。</p>
-        </div>
-        <div class="benefit">
-          <span class="b-no">BENEFIT / 06</span>
-          <h3>专属对接窗口</h3>
-          <p>为合作方设置固定沟通窗口，处理资料更新、信息核对与需求反馈，避免多头联系。</p>
-        </div>
-      </div>
-
-      <div class="table-wrap reveal">
-        <div class="table-title">
-          <h3>合作类型与权益对照</h3>
-          <span>● 适用　○ 视方案而定　— 暂不适用</span>
-        </div>
-        <div class="table-scroll">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">权益项</th>
-                <th scope="col">供应商</th>
-                <th scope="col">采购商</th>
-                <th scope="col">经销商</th>
-                <th scope="col">服务商</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>行业入口露出</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
-              <tr><td>品类专区展示</td><td class="yes">●</td><td class="no">—</td><td class="yes">●</td><td class="yes">○</td></tr>
-              <tr><td>供需信息对接</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
-              <tr><td>需求发布与匹配</td><td class="yes">○</td><td class="yes">●</td><td class="yes">○</td><td class="no">—</td></tr>
-              <tr><td>内容共建</td><td class="yes">●</td><td class="yes">○</td><td class="yes">●</td><td class="yes">●</td></tr>
-              <tr><td>专题与活动联动</td><td class="yes">●</td><td class="yes">○</td><td class="yes">●</td><td class="yes">○</td></tr>
-              <tr><td>专属对接窗口</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td><td class="yes">●</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p class="table-note">此表为招商方案中的权益示意，用于说明四类合作方式的差异。具体权益范围、开通条件与交付形式，须由双方在正式合作文件中确认。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROCESS ============ -->
-  <section class="section section--ink section--tight" id="process">
-    <div class="wrap">
-      <div class="head-row reveal">
-        <div>
-          <p class="eyebrow">How It Works</p>
-          <h2 class="title">从一次留言，到长期合作</h2>
-        </div>
-        <p class="lede">流程按五步推进。您只需完成第一步，其余环节由双方沟通确定节奏。</p>
-      </div>
-
-      <div class="steps reveal">
-        <div class="step">
-          <div class="step-num">01</div>
-          <h3>提交申请</h3>
-          <p>在本页填写合作类型、主体信息与合作诉求，生成一份结构化申请单。</p>
-        </div>
-        <div class="step">
-          <div class="step-num">02</div>
-          <h3>需求沟通</h3>
-          <p>按您留下的联系方式回访，核对经营内容、品类范围与合作目标。</p>
-        </div>
-        <div class="step">
-          <div class="step-num">03</div>
-          <h3>方案确认</h3>
-          <p>明确展示形式、权益组合、资料清单与双方分工，形成书面方案。</p>
-        </div>
-        <div class="step">
-          <div class="step-num">04</div>
-          <h3>签署与开通</h3>
-          <p>双方确认正式文件后，按约定完成资料审核与内容开通。</p>
-        </div>
-        <div class="step">
-          <div class="step-num">05</div>
-          <h3>持续对接</h3>
-          <p>通过固定窗口更新资料、接收需求反馈，并按周期复盘合作效果。</p>
-        </div>
-      </div>
-
-      <div class="process-cta reveal">
-        <p><b>准备好开始了吗？</b><br>您现在就可以填写下方表单，我们会把它整理成一份可直接沟通的申请单。</p>
-        <a class="btn btn--gold" href="#apply">填写合作申请
-          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>
+  <!-- ============ 03 合作名额 ============ -->
+  <section class="quota" id="quota">
+    <div class="wrap quota-inner">
+      <div class="quota-num" aria-hidden="true">1</div>
+      <div>
+        <p class="eyebrow">QUOTA</p>
+        <h2>本次仅招募 1 名技术合作伙伴</h2>
+        <p>我们希望与一位技术合作伙伴集中推进这个项目。本次招募以 1 名为限，不设置多名并行合作名额。若您认同这个域名与行业的对应关系，并愿意投入技术能力，欢迎通过邮件说明您的想法。</p>
+        <a class="btn btn--light" href="mailto:mfujun@agent.qq.com?subject=%E7%9F%B3%E6%9D%90.%E4%B8%AD%E5%9B%BD%20%E6%8A%80%E6%9C%AF%E5%90%88%E4%BD%9C">发送合作邮件
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ============ APPLY ============ -->
-  <section class="section" id="apply">
+  <!-- ============ 04 邮件联系 ============ -->
+  <section class="sec" id="contact">
     <div class="wrap">
-      <div class="head-row reveal">
-        <div>
-          <p class="eyebrow">Online Inquiry</p>
-          <h2 class="title">在线洽谈与合作申请</h2>
+      <div class="sec-head"><span class="sec-no">04</span><h2>邮件联系</h2></div>
+      <div class="contact-grid">
+        <div class="contact-guide">
+          <p class="lede">如果您有意向，请直接发送邮件。我们在邮件里了解彼此，再决定下一步怎么谈。</p>
+          <ol class="contact-steps">
+            <li>请在邮件中说明您的技术方向。</li>
+            <li>请写下您对这个域名与石材行业场景的看法或合作想法。</li>
+            <li>建议邮件主题写为「石材.中国 技术合作」，便于识别。</li>
+          </ol>
         </div>
-        <p class="lede">我们提供表单申请与在线洽谈两种入口。表单会生成结构化申请单，方便双方第一次沟通就进入正题。</p>
-      </div>
 
-      <div class="apply-grid">
-        <div class="apply-aside reveal">
-          <p class="lede">您可以选择与自己角色对应的入口。若暂不确定合作类型，直接填写表单并说明情况即可，我方会在沟通时协助判断。</p>
-          <div class="channel">
-            <div class="channel-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
-            <div>
-              <h3>表单申请</h3>
-              <p>适合需要说明品类、区域与具体诉求的合作方。填写内容会整理为一份申请单。</p>
-            </div>
+        <div class="mail-card">
+          <p class="c-label">联系邮箱</p>
+          <p class="c-address">mfujun@agent.qq.com</p>
+          <p class="c-sub">点击「发送邮件」会在您的设备上打开邮件客户端，收件地址已填好。</p>
+          <div class="mail-actions">
+            <a class="btn btn--primary" href="mailto:mfujun@agent.qq.com?subject=%E7%9F%B3%E6%9D%90.%E4%B8%AD%E5%9B%BD%20%E6%8A%80%E6%9C%AF%E5%90%88%E4%BD%9C">发送邮件
+              <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>
+            </a>
+            <button class="btn btn--line" type="button" id="copyBtn" data-email="mfujun@agent.qq.com">复制邮箱地址</button>
           </div>
-          <div class="channel">
-            <div class="channel-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.9-.9L3 20l1-4.2A8.4 8.4 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/><path d="M8 11h8M8 14h5"/></svg></div>
-            <div>
-              <h3>在线洽谈</h3>
-              <p>适合希望先做简短沟通的合作方。具体洽谈通道需由运营方在「联系我们」板块配置后启用。</p>
-            </div>
-          </div>
-          <div class="channel">
-            <div class="channel-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg></div>
-            <div>
-              <h3>不确定选哪种</h3>
-              <p>您可以选择「其他／待沟通」类型提交表单，并在诉求栏写明希望讨论的问题。</p>
-            </div>
-          </div>
+          <p class="copy-status" id="copyStatus" role="status"></p>
+          <p class="mail-only">本页仅提供上述邮箱作为联系入口，未提供其他联系方式。</p>
         </div>
-
-        <div class="form-card reveal">
-          <div class="form-head">
-            <h3>合作申请单</h3>
-            <p>带 <span style="color:var(--gold)">*</span> 的项目为必填。请勿在表单中填写与本次合作无关的敏感信息。</p>
-          </div>
-
-          <form id="applyForm" novalidate>
-            <div class="form-grid">
-              <div class="field field--full">
-                <label for="fType">合作类型<span class="req">*</span></label>
-                <select id="fType" name="type" required>
-                  <option value="">请选择合作类型</option>
-                  <option value="供应商">供应商 · 矿山／加工／制品</option>
-                  <option value="采购商">采购商 · 工程／装饰／家装</option>
-                  <option value="经销商">经销商 · 代理／批发／门店</option>
-                  <option value="服务商">服务商 · 物流／加工／检测／设计</option>
-                  <option value="其他／待沟通">其他／待沟通</option>
-                </select>
-              </div>
-              <div class="field">
-                <label for="fOrg">公司／主体名称<span class="req">*</span></label>
-                <input id="fOrg" name="org" type="text" required maxlength="80" placeholder="请填写营业执照上的名称">
-              </div>
-              <div class="field">
-                <label for="fName">联系人<span class="req">*</span></label>
-                <input id="fName" name="contact" type="text" required maxlength="30" placeholder="请填写联系人姓名">
-              </div>
-              <div class="field">
-                <label for="fPhone">联系电话<span class="req">*</span></label>
-                <input id="fPhone" name="phone" type="tel" required maxlength="30" inputmode="tel" placeholder="请填写可联系到的号码">
-              </div>
-              <div class="field">
-                <label for="fEmail">电子邮箱</label>
-                <input id="fEmail" name="email" type="email" maxlength="80" placeholder="选填">
-              </div>
-              <div class="field">
-                <label for="fRegion">所在地区</label>
-                <input id="fRegion" name="region" type="text" maxlength="40" placeholder="如：福建 泉州">
-              </div>
-              <div class="field">
-                <label for="fCategory">主营石材品类</label>
-                <input id="fCategory" name="category" type="text" maxlength="60" placeholder="如：花岗岩板材、大理石工程板">
-              </div>
-              <div class="field field--full">
-                <label for="fNote">合作诉求<span class="req">*</span></label>
-                <textarea id="fNote" name="note" required maxlength="600" placeholder="请简要说明您的主营方向、希望对接的资源，以及期望的合作方式。"></textarea>
-                <span class="hint">最多 600 字。请勿填写密码、证件号码等与本次沟通无关的信息。</span>
-              </div>
-            </div>
-
-            <label class="check">
-              <input type="checkbox" id="fAgree" required>
-              <span>我同意运营方仅就本次合作沟通使用上述信息，并理解本页内容不构成要约或承诺。</span>
-            </label>
-
-            <button class="btn btn--dark form-submit" type="submit">生成合作申请单
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 10h13M11 5l5 5-5 5"/></svg>
-            </button>
-            <p class="form-error" id="formError" role="alert"></p>
-            <p class="form-foot" id="formFoot">当前为静态展示版本：提交内容只在您的浏览器内生成申请单，<strong>不会自动发送</strong>。上线前需接入表单服务或配置收件地址。</p>
-
-            <div class="result" id="formResult" hidden aria-live="polite">
-              <h4>申请单已生成</h4>
-              <p id="resultMsg">请复制或下载以下内容，并通过双方约定的渠道发送给运营方。这个编号由页面本地生成，不是正式受理编号。</p>
-              <div class="result-code" id="resultCode"></div>
-              <div class="result-actions">
-                <button type="button" id="btnCopy">复制申请单</button>
-                <button type="button" id="btnDownload">下载为 .txt</button>
-                <button type="button" id="btnReset">重新填写</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section section--alt section--tight" id="contact">
-    <div class="wrap">
-      <div class="head-row reveal">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 class="title">联系我们</h2>
-        </div>
-        <p class="lede">以下为沟通通道占位，上线前须替换为运营方真实信息。本页不填写未经验证的电话、邮箱或地址。</p>
-      </div>
-
-      <div class="contact-grid reveal">
-        <!-- CONTACT: 将 .c-value 内容替换为真实商务邮箱 -->
-        <div class="contact-card">
-          <span class="c-label">商务合作邮箱</span>
-          <div class="c-value"><span class="pending">待补充</span></div>
-          <p class="c-note">建议填写对外公开的商务邮箱，并与表单收件地址保持一致。</p>
-        </div>
-        <!-- CONTACT: 将 .c-value 内容替换为真实咨询电话 -->
-        <div class="contact-card">
-          <span class="c-label">合作咨询电话</span>
-          <div class="c-value"><span class="pending">待补充</span></div>
-          <p class="c-note">建议标注可接通时段，便于采购方与供应商安排沟通。</p>
-        </div>
-        <!-- CONTACT: 将 .c-value 内容替换为真实微信／企业微信，或粘贴二维码图片 -->
-        <div class="contact-card">
-          <span class="c-label">在线洽谈</span>
-          <div class="c-value"><span class="pending">待补充</span></div>
-          <p class="c-note">可配置企业微信、公众号或二维码。配置后「在线洽谈」入口即可启用。</p>
-        </div>
-        <!-- CONTACT: 将 .c-value 内容替换为真实办公地址 -->
-        <div class="contact-card">
-          <span class="c-label">办公地址</span>
-          <div class="c-value"><span class="pending">待补充</span></div>
-          <p class="c-note">建议填写可对外公开的办公地址；如无，可删除这一张卡片。</p>
-        </div>
-      </div>
-
-      <div class="contact-banner reveal">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
-        <p><b>上线前检查清单：</b>① 替换上述四项联系方式；② 为表单配置收件服务或接口地址；③ 核对合作权益与流程表述是否与正式方案一致；④ 删除本条提示及页面中的「待补充」标记。完成前，访客无法通过本页直接联系到运营方。</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FAQ ============ -->
-  <section class="section section--tight" id="faq">
-    <div class="wrap faq-grid">
-      <div class="reveal">
-        <p class="eyebrow">FAQ</p>
-        <h2 class="title">常见问题</h2>
-        <p class="lede">下面四个问题，回答范围只限于本页展示的申请方式与中文域名常识。涉及费用、时效与资质的事项，须由双方另行确认。</p>
-        <div class="rule"></div>
-      </div>
-      <div class="reveal">
-        <details>
-          <summary>提交申请后，运营方会怎么联系我？</summary>
-          <p class="a">您填写的联系方式会写进页面生成的申请单。当前静态版本不会自动发送任何内容；运营方接入收件服务后，才能依据申请单中的信息回复。具体回复方式以双方沟通为准。</p>
-        </details>
-        <details>
-          <summary>合作是否需要付费？周期多长？</summary>
-          <p class="a">本页不列示费用、时效或审核标准。这类事项须由双方根据合作类型与方案另行确认，并写入正式文件。</p>
-        </details>
-        <details>
-          <summary>中文域名怎么访问？</summary>
-          <p class="a">中文域名以中文字符构成，可在支持中文域名的浏览器地址栏输入访问。实际能否访问，取决于域名解析配置、注册与续费状态，以及浏览器与网络环境的支持情况。</p>
-        </details>
-        <details>
-          <summary>哪些主体可以提交合作申请？</summary>
-          <p class="a">本页面向供应商、采购商、经销商与服务商四类主体开放申请。您若不确定归属，可以选择「其他／待沟通」类型，并在诉求栏写明情况。</p>
-        </details>
       </div>
     </div>
   </section>
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a class="brand" href="#top" aria-label="返回页面顶部">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span><span class="brand-name">石材.中国</span><span class="brand-sub">行业合作招商</span></span>
-        </a>
-        <p>面向石材行业供应商、采购商、经销商与服务商的合作招商页面。我们用一个中文入口，承接行业里找资源、找渠道、找服务的需求。</p>
-      </div>
-      <div class="footer-col">
-        <h4>页面导航</h4>
-        <a href="#about">平台定位</a>
-        <a href="#types">合作类型</a>
-        <a href="#benefits">合作权益</a>
-        <a href="#process">合作流程</a>
-      </div>
-      <div class="footer-col">
-        <h4>合作入口</h4>
-        <a href="#apply">在线申请</a>
-        <a href="#apply">在线洽谈</a>
-        <a href="#contact">联系我们</a>
-        <a href="#faq">常见问题</a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>本页为合作招商展示页面。页面文案不构成要约或承诺，亦不陈述已上线的功能、既有合作方数量或经营资质；具体合作内容、权益、费用与联系方式，以双方确认的正式文件及运营方公开信息为准。</p>
-      <span>© 2026 石材.中国 · 合作招商页</span>
-    </div>
+  <div class="wrap footer-inner">
+    <div class="footer-brand"><b>石材.中国</b><span>技术合作伙伴招募 · 仅 1 名</span></div>
+    <p class="footer-note">本页仅说明合作意向、双方分工、名额与邮件联系入口。本页未列示公司资质、收益数据、成功案例、合作期限及其他未经提供的条款；相关内容以双方沟通确认为准。</p>
   </div>
 </footer>
-
-<a class="mobile-cta" id="mobileCta" href="#apply">提交合作申请</a>
 
 <script>
 (function(){
   "use strict";
-  document.documentElement.classList.add("js");
 
-  /* 表单收件配置：填入真实接口地址后，提交会改为向该地址 POST；留空则只在本机生成申请单。 */
-  var FORM_ENDPOINT = "";
+  var btn = document.getElementById("copyBtn");
+  var status = document.getElementById("copyStatus");
+  var email = btn.getAttribute("data-email");
+  var timer;
 
-  var $ = function(s){ return document.querySelector(s); };
-  var $$ = function(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); };
-
-  /* --- 移动导航 --- */
-  var toggle = $("#menuToggle"), navLinks = $("#navLinks");
-  toggle.addEventListener("click", function(){
-    var open = navLinks.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(open));
-    toggle.setAttribute("aria-label", open ? "关闭导航菜单" : "打开导航菜单");
-  });
-  $$("#navLinks a").forEach(function(a){
-    a.addEventListener("click", function(){
-      navLinks.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
-    });
-  });
-
-  /* --- 滚动出现动画 --- */
-  var reveals = $$(".reveal");
-  if ("IntersectionObserver" in window){
-    var io = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (e.isIntersecting){ e.target.classList.add("is-visible"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.08, rootMargin: "0px 0px -40px 0px" });
-    reveals.forEach(function(el){ io.observe(el); });
-  } else {
-    reveals.forEach(function(el){ el.classList.add("is-visible"); });
+  function report(text){
+    status.textContent = text;
+    clearTimeout(timer);
+    timer = setTimeout(function(){ status.textContent = ""; }, 2600);
   }
 
-  /* --- 导航高亮 --- */
-  if ("IntersectionObserver" in window){
-    var sections = $$("main section[id]");
-    var links = $$("#navLinks a");
-    var navIo = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){
-        if (!e.isIntersecting) return;
-        links.forEach(function(a){
-          a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id);
-        });
-      });
-    }, { rootMargin: "-30% 0px -60% 0px" });
-    sections.forEach(function(s){ navIo.observe(s); });
-  }
-
-  /* --- 移动端吸底 CTA --- */
-  var mobileCta = $("#mobileCta"), hero = $("#top");
-  if ("IntersectionObserver" in window && mobileCta){
-    var ctaIo = new IntersectionObserver(function(entries){
-      entries.forEach(function(e){ mobileCta.classList.toggle("show", !e.isIntersecting); });
-    }, { threshold: 0 });
-    ctaIo.observe(hero);
-  }
-
-  /* --- 按合作类型预填表单 --- */
-  $$(".type-link[data-type]").forEach(function(link){
-    link.addEventListener("click", function(){
-      var sel = $("#fType");
-      sel.value = link.getAttribute("data-type");
-      sel.dispatchEvent(new Event("change", { bubbles: true }));
-    });
-  });
-
-  /* --- 表单 --- */
-  var form = $("#applyForm"), err = $("#formError"), result = $("#formResult"),
-      codeBox = $("#resultCode"), resultMsg = $("#resultMsg"), formFoot = $("#formFoot");
-  var lastText = "", formFootDefault = formFoot.textContent;
-
-  function requiredFields(){ return $$("#applyForm [required]"); }
-
-  function validate(){
-    var ok = true, firstBad = null;
-    requiredFields().forEach(function(el){
-      var bad = false;
-      if (el.type === "checkbox"){ bad = !el.checked; }
-      else if (!el.value.trim()){ bad = true; }
-      else if (el.type === "email" && el.value.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim())){ bad = true; }
-      el.setAttribute("aria-invalid", String(bad));
-      if (bad && !firstBad) firstBad = el;
-      if (bad) ok = false;
-    });
-    if (!ok){
-      err.textContent = "请检查标红的必填项；电子邮箱若填写，请使用正确格式。";
-      if (firstBad && firstBad.type !== "checkbox") firstBad.focus();
-    } else {
-      err.textContent = "";
-    }
+  function fallbackCopy(){
+    var ta = document.createElement("textarea");
+    ta.value = email;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    var ok = false;
+    try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
     return ok;
   }
 
-  $$("#applyForm input, #applyForm select, #applyForm textarea").forEach(function(el){
-    el.addEventListener("input", function(){
-      if (el.getAttribute("aria-invalid") === "true") el.setAttribute("aria-invalid", "false");
-      err.textContent = "";
-    });
-  });
-
-  function pad(n){ return String(n).padStart(2, "0"); }
-  function buildText(data){
-    var d = new Date(data.ts);
-    var stamp = d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate()) + " " + pad(d.getHours()) + ":" + pad(d.getMinutes());
-    var lines = [
-      "石材.中国 · 合作申请单",
-      "================================",
-      "本地生成编号：" + data.code,
-      "生成时间：" + stamp,
-      "",
-      "合作类型：" + data.type,
-      "公司／主体名称：" + data.org,
-      "联系人：" + data.contact,
-      "联系电话：" + data.phone,
-      "电子邮箱：" + (data.email || "未填写"),
-      "所在地区：" + (data.region || "未填写"),
-      "主营石材品类：" + (data.category || "未填写"),
-      "",
-      "合作诉求：",
-      data.note,
-      "",
-      "--------------------------------",
-      "说明：本单由「石材.中国」合作招商页面在浏览器本地生成，尚未发送给运营方，也不代表合作已被受理。请通过双方约定的渠道发送本单。页面文案不构成要约或承诺。"
-    ];
-    return lines.join("\n");
-  }
-
-  function showResult(text, sent){
-    lastText = text;
-    codeBox.textContent = text;
-    resultMsg.textContent = sent
-      ? "申请单已提交。请保存下方摘要，后续沟通以运营方回复为准。"
-      : "请复制或下载以下内容，并通过双方约定的渠道发送给运营方。这个编号由页面本地生成，不是正式受理编号。";
-    result.hidden = false;
-    result.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
-
-  form.addEventListener("submit", function(e){
-    e.preventDefault();
-    if (!validate()) return;
-
-    var now = new Date();
-    var rnd = Math.floor(1000 + Math.random() * 9000);
-    var data = {
-      code: "SC-" + now.getFullYear() + pad(now.getMonth()+1) + pad(now.getDate()) + "-" + rnd,
-      ts: now.getTime(),
-      type: $("#fType").value.trim(),
-      org: $("#fOrg").value.trim(),
-      contact: $("#fName").value.trim(),
-      phone: $("#fPhone").value.trim(),
-      email: $("#fEmail").value.trim(),
-      region: $("#fRegion").value.trim(),
-      category: $("#fCategory").value.trim(),
-      note: $("#fNote").value.trim()
-    };
-    var text = buildText(data);
-
-    if (FORM_ENDPOINT){
-      var btn = form.querySelector('button[type="submit"]');
-      btn.disabled = true;
-      fetch(FORM_ENDPOINT, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data)
-      }).then(function(r){
-        if (!r.ok) throw new Error("network");
-        formFoot.textContent = "申请单已发送至配置的收件服务。";
-        showResult(text, true);
-      }).catch(function(){
-        err.textContent = "提交未成功，请稍后重试，或改用「联系我们」中的沟通通道。";
-        showResult(text, false);
-      }).finally(function(){ btn.disabled = false; });
-    } else {
-      showResult(text, false);
-    }
-  });
-
-  $("#btnCopy").addEventListener("click", function(){
-    var btn = this;
-    function done(){ btn.textContent = "已复制 ✓"; setTimeout(function(){ btn.textContent = "复制申请单"; }, 1800); }
+  btn.addEventListener("click", function(){
     if (navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(lastText).then(done).catch(function(){ fallbackCopy(lastText, done); });
-    } else { fallbackCopy(lastText, done); }
-  });
-
-  function fallbackCopy(text, done){
-    var ta = document.createElement("textarea");
-    ta.value = text;
-    ta.style.position = "fixed"; ta.style.opacity = "0";
-    document.body.appendChild(ta); ta.select();
-    try { document.execCommand("copy"); done(); } catch (e) { alert("复制未成功，请改用「下载为 .txt」。"); }
-    document.body.removeChild(ta);
-  }
-
-  $("#btnDownload").addEventListener("click", function(){
-    var blob = new Blob(["\ufeff" + lastText], { type: "text/plain;charset=utf-8" });
-    var url = URL.createObjectURL(blob);
-    var a = document.createElement("a");
-    a.href = url;
-    a.download = "石材中国-合作申请单-" + new Date().toISOString().slice(0,10) + ".txt";
-    document.body.appendChild(a); a.click(); document.body.removeChild(a);
-    setTimeout(function(){ URL.revokeObjectURL(url); }, 1000);
-  });
-
-  $("#btnReset").addEventListener("click", function(){
-    form.reset();
-    result.hidden = true;
-    err.textContent = "";
-    formFoot.textContent = formFootDefault;
-    $$("#applyForm [aria-invalid]").forEach(function(el){ el.setAttribute("aria-invalid", "false"); });
-    $("#fType").focus();
+      navigator.clipboard.writeText(email).then(function(){ report("邮箱地址已复制。"); }).catch(function(){
+        report(fallbackCopy() ? "邮箱地址已复制。" : "复制未成功，请手动选中邮箱地址复制。");
+      });
+    } else {
+      report(fallbackCopy() ? "邮箱地址已复制。" : "复制未成功，请手动选中邮箱地址复制。");
+    }
   });
 })();
 </script>
