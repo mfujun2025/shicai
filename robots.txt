@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mfujun2025.github.io/shicai/sitemap.xml
+Sitemap: https://xn--9qv438a.xn--fiqs8s/sitemap.xml
